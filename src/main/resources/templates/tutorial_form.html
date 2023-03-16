@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <title>Hummerhand - Spring Boot Thymeleaf example</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+    <h2 class="text-center">[[${pageTitle}]]</h2>
+
+        <form action="@{/saveTutorial}" modelAttribute="tutor" method="post" enctype="multipart/form-data" th:object="${tutorial}"
+        style="max-width: 550px; margin: 0 auto">
+
+            <input type="hidden" th:field="*{id}" />
+
+            <label for="title">Title</label>
+                <input type="text" th:field="*{title}" required minlength="2" maxlength="128" id="title" />
+            <br><br>
+
+            <label for="description">Description</label>
+                <input type="text" th:field="*{description}" minlength="2" maxlength="256" id="description" />
+            <br><br>
+
+            <label >Published</label>
+                <input type="checkbox" th:field="*{published}" />
+            <br><br>
+
+            <div class="text-center">
+                <input type="submit" value="Save" />
+                <input type="button" value="Cancel" />
+            </div>
+
+        </form>
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.main-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.thead-crud-form {
+    background: #E8ECEF;
+}
+
+.col {
+    padding: 0.7rem 0.7rem;
+}
+
+.crud-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crud-form-table th,
+.crud-form-table td {
+    padding: 0.7rem 0.7rem;
+}
+
+.thead-crud-form tr {
+    border-bottom: 2px solid #cecece;
+}
+
+.tbody-tr tr {
+    border-bottom: 1px solid #cecece;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}

@@ -1,0 +1,96 @@
+.navbar {
+    padding: 0 10px;
+}
+
+*.icon-dark {
+    color: grey;
+}
+
+.message {
+    position: absolute;
+    top: 40px;
+    right:5px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 1px solid grey;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.search button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    background: grey;
+}
+
+.main-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.thead-crud-form {
+    background: #E8ECEF;
+}
+
+.my-col {
+    padding: 0.7rem 0.7rem;
+}
+
+.crud-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crud-form-table th,
+.crud-form-table td {
+    padding: 0.7rem 0.7rem;
+}
+
+.thead-crud-form tr {
+    border-bottom: 2px solid #cecece;
+}
+
+.tbody-tr tr {
+    border-bottom: 1px solid #cecece;
+}
+
+.table-border {
+    border: 1px solid #cecece;
+}
+
+.my-col2 {
+    padding: 0.7rem 0.7rem;
+    text-align: center;
+}
+
+.btn-background {
+    background: #63aaee;
+}
