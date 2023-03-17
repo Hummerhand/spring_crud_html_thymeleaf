@@ -191,12 +191,12 @@ input {
     margin: 0 auto;
 }
 
-.my-form-horizontal .form-group:before {
+.my-form-horizontal .my-form-group:before {
     display: table;
     content: " ";
 }
 
-.my-form-horizontal .form-group:after {
+.my-form-horizontal .my-form-group:after {
     clear: both;
     display: table;
     content: " ";
