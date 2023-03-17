@@ -41,14 +41,6 @@
                 <tbody>
                     <th:block th:each="tutorial : ${tutorials}">
 
-                        <th:url var="updateButton" value="/updateInfo">
-                            <c:param name="tutorialId" value="${tutorial.id}"/>
-                        </th:url>
-
-                        <th:url var="deleteButton" value="/deleteTutorial">
-                            <c:param name="tutorialId" value="${tutorial.id}"/>
-                        </th:url>
-
 
                         <tr class="table-border">
                             <th>[[${tutorial.id}]]</th>
@@ -61,11 +53,10 @@
                                    th:href="@{'/tutorials/' + ${tutorial.id} + '/published/true'}" title="Enable this tutorial"></a>
                             </td>
                             <td class="my-col2">
-                                <input class="btn-background" type="button" value="Update"
-                                       onclick="window.location.href = '${updateButton}'"/>
-
-                                <input class="btn-background" type="button" value="Delete"
-                                       onclick="window.location.href = '${deleteButton}'"/>
+                                <a th:href="@{'/updateTutorial/' + ${tutorial.id}}" title="Update this tutorial" class="zb-btn">Update</a>
+                                &nbsp;
+                                <a th:href="@{'/deleteTutorial/' + ${tutorial.id}}" th:tutorialTitle="${tutorial.title}"
+                                   title="Delete this tutorial" class="zb-btn">Delete</a>
                             </td>
                         </tr>
                     </th:block>

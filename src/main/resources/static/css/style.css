@@ -93,4 +93,141 @@
 
 .btn-background {
     background: #63aaee;
+    border-radius: 3px;
+}
+
+.zb-btn {
+    display: inline-block;  /*Строчно-блочный элемент */
+    background: #81B6E7FF; /* Серый цвет фона */
+    color: #ffffff; /* Белый цвет текста */
+    padding: 0.7rem 0.7rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.my-form-horizontal .my-form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.my-form-group {
+    margin-bottom: 15px;
+}
+
+.my-col-sm-2,
+.my-col-sm-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.my-form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    font: inherit;
+    margin: 0;
+}
+
+.my-form-horizontal {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.my-form-horizontal .form-group:before {
+    display: table;
+    content: " ";
+}
+
+.my-form-horizontal .form-group:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-title {
+    padding-left: 15%;
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .my-control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .my-col-sm-2 {
+        width: 16.66666667%;
+        float: left;
+    }
+    .my-col-sm-10 {
+        width: 83.33333333%;
+        float: left;
+    }
 }

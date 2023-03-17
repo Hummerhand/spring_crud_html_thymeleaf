@@ -48,16 +48,17 @@ public class MyController {
         return "redirect:/tutorials";
     }
 
-    @RequestMapping("/updateInfo")
-    public String updateTutorial(@RequestParam("tutorialId") int id, Model model) {
+    @RequestMapping("/updateTutorial/{id}")
+    public String updateTutorial(@PathVariable("id") int id, Model model) {
 
         Tutorial tutorial = service.getTutorial(id);
         model.addAttribute("tutorial", tutorial);
+        model.addAttribute("pageTitle", "Edit Tutorial (ID: " + id + ")");
 
         return "tutorial_form";
     }
 
-    @RequestMapping("/deleteTutorial")
+    @RequestMapping("/deleteTutorial/{id}")
     public String deleteTutorial(@PathVariable int id) {
 
         service.deleteTutorial(id);
