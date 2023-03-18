@@ -4,7 +4,7 @@ CREATE TABLE tutorials (
   id int NOT NULL AUTO_INCREMENT,
   title varchar(15),
   description varchar(25),
-  publishedStatus varchar(20),
+  published boolean,
   PRIMARY KEY (id)
 ) ;
 
